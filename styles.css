@@ -2,14 +2,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* -- HEADER SECTION --  */
+
 .header {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
     padding: 10px;
+    color: #ffffff;
 }
 
-a:link, a:visited, a:hover, a:active { color: #ffffff;
+a:link, a:visited, a:hover, a:active { 
+    color: #ffffff;
     text-decoration: none;
     margin: 10px;
   }
@@ -24,35 +28,105 @@ a:link, a:visited, a:hover, a:active { color: #ffffff;
 
 }
 
+/* -- HERO SECTION --  */
+
 .hero {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.herocontainer1 {
+.herocontainer {
     height: auto;
-    width: 400px;
+    width: 600px;
     margin: 30px;
+}
+
+.hero-image {
+    align-content: center;
 }
 
 .hero-header {
     font-size: 46px;
     font-weight: 900;
+    margin: 10px;
+}
+
+.hero-text {
+    margin: 10px;
 }
 
 button {
+    color: #F9FAF8;
     background-color: #3882F6;
     border: none;
     border-radius: 5px;
     font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
 }
+
+/* -- SECTION 1 - IMAGE BLOCKS --  */
 
 .section1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.sectiontitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.block {
+    border: solid 4px #3882F6;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    flex-shrink: 0;
+    margin: 10px 10px;
+}
+
+.photogrid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px 400px
 
 }
 
-.section2 {
+/* -- SECTION 2 - QUOTE BLOCK --  */
 
+.section2 {
+    background-color: #E5E7EB;
+    display: flex;
+}
+
+.pullquote {
+    display: flex;
+    align-content: center;
+    font-style: italic;
+    font-size: 20pt;
+    color: #1F2937;
+    margin: 40px 120px;
+}
+
+/* -- CALL TO ACTION --  */
+
+.cta {
+    background-color: #ffffff;
+}
+
+/* -- FOOTER - you may not even need this is you use the same declarations as the header --  */
+
+.footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
 }
