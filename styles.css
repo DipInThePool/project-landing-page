@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -73,7 +77,7 @@ button {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 20px 70px 20px;
 }
 
 .sectiontitle {
@@ -89,7 +93,8 @@ button {
     height: 150px;
     width: 150px;
     flex-shrink: 0;
-    margin: 10px 10px;
+    flex-grow: 0;
+    margin: 10px 10px 30px;
 }
 
 .photogrid {
@@ -100,20 +105,41 @@ button {
 
 }
 
+.watch-image {
+    /* display: flex; */
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.photo-text {
+    display: flex;
+    margin: 20px 0px;
+}
+
 /* -- SECTION 2 - QUOTE BLOCK --  */
 
 .section2 {
     background-color: #E5E7EB;
     display: flex;
+    flex-direction: column;
 }
 
 .pullquote {
-    display: flex;
     align-content: center;
     font-style: italic;
     font-size: 20pt;
     color: #1F2937;
-    margin: 40px 120px;
+    margin: 40px 120px 10px;
+}
+
+.attrib {
+    text-align: right;
+    font-style: italic;
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0px 120px 40px;
 }
 
 /* -- CALL TO ACTION --  */
